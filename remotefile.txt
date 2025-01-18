@@ -1,2 +1,19 @@
 
 this file is created in the git hub
+
+
+ Run the  below snmpget command to get the OID’s of the following from your 
+machine/snmp agent and record the output  
+• OID of Ethernet interface (ens5) 
+• snmpget -c lab -v 2c localhost ifDescr.2
+
+
+ OID of Loopback interface(lo) 
+• snmpget -c lab -v 2c localhost ifDescr.1
+
+ OID of MAC Address  
+• snmpget -c lab -v 2c localhost ifPhysAddress.1 
+• snmpget -c lab -v 2c localhost ifPhysAddress.2
+
+ OID of sysContact 
+• snmpget -c lab -v 2c localhost sysContact.0 
